@@ -98,22 +98,24 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
+\resumeSubheading
       {Carnegie Mellon University}{Pittsburgh, PA}
       {Graduate Student Researcher, Computational Engineering \& Robotics Lab}{Aug 2024 -- May 2026}
       \resumeItemListStart
-        \resumeItem{Developed a physics-regularized graph neural network that estimates 3D deformation using 2D intraoperative imaging for endo-vascular surgery, tracking and reconstructiong the anatomy with a sub-millimeter error margin of 10\%, realtime at 140fps.}
-        \resumeItem{Built a synthetic volume and fluoroscopic dataset for acute stroke interventions with viscoelastic tool-anatomy interaction.}
-        %\resumeItem{}
+        \resumeItem{Architected \textsc{FluoroGRID}, a multi-modal framework fusing ResNet-based visual feature extractor, PointNet-based mesh encoder, and dynamic Graph Convolutional Networks to estimate 3D deformation from 2D fluoroscopy images during endovascular surgery.}
+        \resumeItem{Engineered a geometrically-regularized loss function embedding discrete differential geometry to enforce structural limits, achieving a sub-millimeter 3D target registration error (10\%) at an inference speed of 139 fps.}
+        \resumeItem{Built a physics-inspired synthetic data pipeline simulating complex viscoelastic tool-tissue interactions and simulated fluoroscopy ray-tracing, generating an expansive temporal dataset of 370,000+ paired 3D/2D training samples.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Carnegie Mellon University}{Pittsburgh, PA}
       {Research Assistant, The $\forall$ Lab \& Image Science Lab }{Feb 2025 -- Aug 2025}
-      \resumeItemListStart
-        \resumeItem{Developed a neural ODE-based model to visually predict future glioblastoma growth across all three brain MRI modalities.}
-        \resumeItem{Presented early findings at CMU BME Forum 2025, currently exploring physics-informed approaches.}
-      \resumeItemListEnd
+  \resumeItemListStart
+    \resumeItem{Developed a Neural ODE-based forecasting pipeline to predict longitudinal glioblastoma growth using
+  multimodal MRI sequences.}
+    \resumeItem{Architected a hybrid Attention U-Net and temporal embedding model to evolve latent tumor states in continuous time.}
+    \resumeItem{Presented findings at CMU BME Forum 2025, currently investigating MRI evolution as a more explicit dynamics problem.}
+  \resumeItemListEnd
 
 
     \resumeSubheading
@@ -128,40 +130,46 @@
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
-\section{Academic Projects}
+\section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
           {\textbf{Neural Anisotropic Diffusion for Brain MRI Denoising}}{ }
           \resumeItemListStart
-            \resumeItem{Developed a learning-based Perona-Malik inspired framework for noise suppression of brain MRI with structural preservation.}
+            \resumeItem{Developed a learned anisotropic diffusion framework by unrolling the Perona-Malik PDE into an end-to-end differentiable neural network, replacing fixed mathematical conduction functions with spatially-adaptive, learned weights.}
+            \resumeItem{Achieved 24.85 dB PSNR on the Br35H dataset, a +4.46 dB improvement over the best classical baseline (Non-Local Means), while reducing Edge MSE by 47\% compared to traditional Perona-Malik}
+            \resumeItem{Designed a hybrid architecture featuring a MiniUNet guidance encoder, an 8-neighbor iterative update loop, and a residual refinement stage to suppress Rician noise while preserving critical anatomical margins.}
+
           \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Dual-View Mammography Breast Cancer Prediction}}{ }
-          \resumeItemListStart
-            \resumeItem{Developed a cross view attention classifier using a custom spatially aligned MLO \& CC mammograms for enhanced prediction.}
-          \resumeItemListEnd
+    \resumeProjectHeading
+    {\textbf{Dual-View Mammography Breast Cancer Prediction}}{}
+    \resumeItemListStart
+        \resumeItem{Developed a spatial alignment pipeline to register MLO mammograms to CC view using breast-mask centroid matching and affine translation, for better dual-view feature correspondence by reducing cross-view centroid distance from 411 px to 0.39 px.}
+        \resumeItem{Built a ResNet + cross-attention classifier that fused aligned CC/MLO mammograms for binary cancer risk stratification at 80\%}
+    \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Unsupervised Neural Active Contours for Segmentation}}{ }
           \resumeItemListStart
             \resumeItem{Developed a segmentation approach predicting 2D contour boundaries by minimizing a physics-based active contour energy loss.}
           \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Sparse 2D Echocardiograph to 3D Cardiac Volume Reconstruction}}{ }
-          \resumeItemListStart
-            \resumeItem{Developed a meta-learning 3D reconstruction for cardiac volumes from sparse 2D echocardiography views via implicit priors.}
-          \resumeItemListEnd
+\resumeProjectHeading
+    {\textbf{Sparse 2D Echocardiograph to 3D Cardiac Volume Reconstruction}}{}
+    \resumeItemListStart
+        \resumeItem{Developed a sparse-view 3D cardiac reconstruction pipeline using coordinate-based neural implicit representations to recover continuous left-ventricle occupancy fields from limited 2D echocardiography slices.}
+        \resumeItem{Implemented differentiable multi-view projection with learnable pose optimization for joint slice alignment and geometry recovery, used Fourier positional encodings to capture fine anatomical detail and high-frequency boundaries under sparse supervision.}
+        \resumeItem{Applied volumetric BCE point sampling to supervise unobserved 3D regions and geometric regularization (smoothness / surface priors) to enforce anatomically plausible reconstructions, achieving 0.8638 Dice / 0.7649 IoU on MITEA-CAP dataset.}
+    \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 %-----------LEADERSHIP-----------
-\section{Leadership}
- \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt]
-    \small{\item{
-    \textbf{Open Horizon Robotics}{: Senior Leadership Team \& Course Designer} \hfill Apr 2025 -- Present \\
-     \textbf{Carnegie Mellon University}{: Graduate Ambassador for Biomedical Engineering} \hfill Apr 2025 -- Present \\
-     \textbf{IEEE Engineering in Medicine \& Biology Society, Manipal}{: Chairperson, Head of Research, Secretary} \hfill Jul 2021 -- May 2023 \\
-     %\vspace{1pt}
-     \textbf{IEEE Robotics \& Automation Society, Manipal}{: Exec Board Member, Webmaster} \hfill Feb 2022 -- Jan 2023
-    }}
- \end{itemize}
+% %\section{Leadership}
+%  \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt]
+%     \small{\item{
+%     \textbf{Open Horizon Robotics}{: Senior Leadership Team \& Course Designer} \hfill Apr 2025 -- Present \\
+%      \textbf{Carnegie Mellon University}{: Graduate Ambassador for Biomedical Engineering} \hfill Apr 2025 -- May 2026 \\
+%      \textbf{IEEE Engineering in Medicine \& Biology Society, Manipal}{: Chairperson, Head of Research} \hfill Jul 2021 -- May 2023 \\
+%      %\vspace{1pt}
+%      \textbf{IEEE Robotics \& Automation Society, Manipal}{: Exec Board Member, Webmaster} \hfill Feb 2022 -- Jan 2023
+%     }}
+%  \end{itemize}
 
 \end{document}
