@@ -1,0 +1,170 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[left=0.5in, right=0.5in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{environ}
+
+% Custom colors
+\definecolor{darkblue}{RGB}{0,0,139}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,      
+    urlcolor=darkblue,
+}
+
+% Section formatting - REDUCED SPACING HERE
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & #4 \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \small #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% REDUCED BULLET SPACING HERE
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=1pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in, itemsep=-1pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% Removes page numbers
+\pagestyle{empty}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\LARGE Tushar Nayak} \\ \vspace{5pt}
+    \small (412) 478-5677 $|$ \href{mailto:tusharn@andrew.cmu.edu}{\underline{tusharn@andrew.cmu.edu}} $|$ 
+    \href{https://linkedin.com/in/nayaktushar}{\underline{linkedin.com/in/nayaktushar}} $|$
+    \href{https://tushar-nayak.github.io/}{\underline{tushar-nayak.github.io}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {Master of Science - Biomedical Engineering (Research)}{May 2026}
+      \vspace{2pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{Fellowship:} Biomedical Engineering Department Head's Fellowship}
+        \resumeItem{\textbf{Courses:} Computer Vision, Image-Based Computational Modelling \& Analysis, Learning for 3D Vision, Medical Image Analysis}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Manipal Institute of Technology}{Manipal, India}
+      {Bachelor of Technology - Biomedical Engineering, Minor in Data Science}{May 2023}
+      \vspace{2pt}
+      \resumeItemListStart
+        \resumeItem{\textbf{Awards:} Best Paper - Second International Conference on Artificial Intelligence, Computational Electronics \& Communication}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt]
+    \small{\item{
+     \textbf{Deep Learning}{: Graph Neural Networks, Neural ODEs, Attention Mechanisms, Physics-Informed Neural Networks, VLMs.} \\
+     \textbf{3D Vision}{: Differentiable Neural Rendering, Deformable Registration, Implicit/Explicit Neural Representation, 3D Reconstruction} \\
+     \textbf{Computer Vision}{: Object Detection, Segmentation, Structure From Motion, Optical Flow, Photometric Stereovision}}}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {Graduate Student Researcher, Computational Engineering \& Robotics Lab}{Aug 2024 -- May 2026}
+      \resumeItemListStart
+        \resumeItem{Developed physics-regularized graph neural network that can estimate 3D deformation using 2D intraoperative imaging for endovascular surgery, tracking and reconstructiong the anatomy with a sub-millimeter error margin of 10\% realtime at 140fps.}
+        \resumeItem{Built a synthetic volume and fluoroscopic dataset for acute stroke interventions with viscoelastic tool-anatomy interaction.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {Research Assistant, The $\forall$ Lab \& Image Science Lab }{Feb 2025 -- Aug 2025}
+      \resumeItemListStart
+        \resumeItem{Developed a neural ODE-based model to visually predict future glioblastoma growth across all brain MRI modalities.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {Teaching Assistant, College of Engineering \& School of Computer Science}{Jan 2025 -- May 2026}
+      \resumeItemListStart
+        \resumeItem{Courses: Applied Deep Learning, Computer Vision, Machine Learning in BME, and Fundamentals of Computational BME}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Manipal Institute of Technology}{Manipal, India}
+      {Undergraduate Student Researcher, Biomedical Informatics Computing Lab}{Jan 2022 -- May 2023}
+      \resumeItemListStart
+        \resumeItem{Designed an ensemble neural network combining three transfer-learning models with self-attention for Oral Cancer detection.}
+        \resumeItem{Achieved CAM visualizable accuracies of 95\% for detecting cancer across oral photos, OCT, and histopathological modalities.}
+        \resumeItem{Co-authored publications based on this pipeline, alongside related models for Lung Cancer, Monkeypox \& Dengue detection.}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Academic Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Neural Anisotropic Diffusion for Brain MRI Denoising}}{Jan 2026 -- May 2026}
+          \resumeItemListStart
+            \resumeItem{Developed a learning-based Perona-Malik inspired framework for noise suppression of brain MRI with structural preservation.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Dual-View Mammography Breast Cancer Prediction}}{Jan 2026 -- May 2026}
+          \resumeItemListStart
+            \resumeItem{Developed a cross view attention classifier using a custom spatially aligned MLO \& CC mammograms for enhanced prediction.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Unsupervised Neural Active Contours for Segmentation}}{Dec 2025 -- present}
+          \resumeItemListStart
+            \resumeItem{Developed a segmentation approach predicting 2D contour boundaries by minimizing a physics-based active contour energy loss.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Sparse 2D Echocardiograph to 3D Cardiac Volume Reconstruction}}{Aug 2025 -- Dec 2025}
+          \resumeItemListStart
+            \resumeItem{Developed a meta-learning 3D reconstruction for cardiac volumes from sparse 2D echocardiography views via implicit priors.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------LEADERSHIP-----------
+\section{Leadership}
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt]
+    \small{\item{
+    \textbf{Open Horizon Robotics}{: Senior Leadership Team \& Course Designer} \hfill Apr 2025 -- Present \\
+     \textbf{Carnegie Mellon University}{: Graduate Ambassador for Biomedical Engineering} \hfill Apr 2025 -- Present \\
+     \textbf{IEEE Engineering in Medicine \& Biology Society, Manipal}{: Chairperson, Head of Research, Secretary} \hfill Jul 2021 -- May 2023 \\
+     %\vspace{1pt}
+     \textbf{IEEE Robotics \& Automation Society, Manipal}{: Exec Board Member, Webmaster} \hfill Feb 2022 -- Jan 2023
+    }}
+ \end{itemize}
+
+\end{document}
