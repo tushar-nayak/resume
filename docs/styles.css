@@ -111,6 +111,15 @@ a {
   font-size: 0.92rem;
 }
 
+.repo-links a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.repo-note {
+  color: var(--muted);
+}
+
 @media (max-width: 720px) {
   .bar {
     flex-direction: column;
