@@ -1,4 +1,4 @@
-name: Build and Push Resume PDF
+name: Build and Push Resume PDF and Preview
 
 on:
   push:
@@ -17,16 +17,24 @@ jobs:
         with:
           root_file: main.tex 
 
-      - name: Rename, Commit and push PDF
+      - name: Install PDF conversion tools
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
+      - name: Rename, Create Preview, Commit and Push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # Rename the compiled main.pdf to your desired filename
+          # 1. Rename the compiled main.pdf
           mv main.pdf tushar-nayak-resume.pdf
           
-          # Add the specifically named PDF
-          git add tushar-nayak-resume.pdf
+          # 2. Convert the first page of the PDF to a PNG image
+          # -png specifies the format, -r 150 sets the resolution, -singlefile outputs just the first page
+          pdftoppm -png -r 150 -singlefile tushar-nayak-resume.pdf preview
           
-          git commit -m "Auto-compiled PDF from GitHub Actions" || echo "No changes to commit"
+          # 3. Add both the PDF and the new image to Git
+          git add tushar-nayak-resume.pdf preview.png
+          
+          # 4. Commit and push
+          git commit -m "Auto-compiled PDF and generated preview" || echo "No changes to commit"
           git push
