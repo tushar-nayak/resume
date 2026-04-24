@@ -1,5 +1,16 @@
 # Tushar Nayak's Resume
+
+This repository now serves both the Overleaf-built PDF resume and a GitHub Pages
+landing page.
+
 [![Build and Push Resume PDF](https://github.com/tushar-nayak/resume/actions/workflows/compile-pdf.yml/badge.svg)](https://github.com/tushar-nayak/resume/actions)
-Here is a preview of my latest resume:
+
+## Site
+
+- [Resume site](./index.html)
+- [PDF resume](./tushar-nayak-resume.pdf)
+- [LaTeX source](./main.tex)
+
+## Preview
+
 ![Resume Preview](./preview.png)
-[Download the PDF version here](./tushar-nayak-resume.pdf)
