@@ -222,7 +222,7 @@ img {
 
 .repo-copy {
   display: grid;
-  gap: 4px;
+  gap: 5px;
 }
 
 .repo-copy strong {
@@ -234,6 +234,12 @@ img {
   color: var(--muted);
   font-size: 0.86rem;
   line-height: 1.4;
+}
+
+.repo-detail {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: #4f5d6c;
 }
 
 @media (max-width: 900px) {
@@ -276,5 +282,9 @@ img {
   .repo-icon svg {
     width: 20px;
     height: 20px;
+  }
+
+  .repo-detail {
+    font-size: 0.8rem;
   }
 }
