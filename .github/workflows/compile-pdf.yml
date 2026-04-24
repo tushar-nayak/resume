@@ -20,7 +20,7 @@ jobs:
       - name: Install PDF conversion tools
         run: sudo apt-get update && sudo apt-get install -y poppler-utils
 
-      - name: Rename, Create Preview, Commit and Push
+      - name: Rename, Create Preview, Update Timestamp, Commit and Push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
@@ -29,12 +29,15 @@ jobs:
           mv main.pdf tushar-nayak-resume.pdf
           
           # 2. Convert the first page of the PDF to a PNG image
-          # -png specifies the format, -r 150 sets the resolution, -singlefile outputs just the first page
           pdftoppm -png -r 150 -singlefile tushar-nayak-resume.pdf preview
           
-          # 3. Add both the PDF and the new image to Git
-          git add tushar-nayak-resume.pdf preview.png
+          # 3. Get the current date and update the README
+          CURRENT_DATE=$(date +"%B %d, %Y")
+          sed -i "s/Last updated: .*/Last updated: $CURRENT_DATE/" README.md
           
-          # 4. Commit and push
-          git commit -m "Auto-compiled PDF and generated preview" || echo "No changes to commit"
+          # 4. Add the PDF, image, and modified README to Git
+          git add tushar-nayak-resume.pdf preview.png README.md
+          
+          # 5. Commit and push
+          git commit -m "Auto-compiled PDF, generated preview, and updated timestamp" || echo "No changes to commit"
           git push
