@@ -63,6 +63,13 @@
     \href{https://tushar-nayak.github.io/}{\underline{tushar-nayak.github.io}}
 \end{center}
 
+
+\section{Objective}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt]
+\small{\item{
+Computer Vision and Machine Learning engineer specializing in 2D/3D perception, multimodal representation learning, geometric deep learning, and physically grounded AI systems. Applied these methods to high-impact real-world problems in medical imaging, surgical robotics, and complex data-driven domains requiring robust spatial reasoning under limited or noisy observations.
+}}
+\end{itemize}
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
@@ -103,8 +110,8 @@
       {Graduate Student Researcher, Computational Engineering \& Robotics Lab}{Aug 2024 -- May 2026}
       \resumeItemListStart
         \resumeItem{Architected \textsc{FluoroGRID}, a multi-modal framework fusing ResNet-based visual feature extractor, PointNet-based mesh encoder, and dynamic Graph Convolutional Networks to estimate 3D deformation from 2D fluoroscopy images during endovascular surgery.}
-        \resumeItem{Engineered a geometrically-regularized loss function embedding discrete differential geometry to enforce structural limits, achieving a sub-millimeter 3D target registration error (10\%) at an inference speed of 139 fps.}
-        \resumeItem{Built a physics-inspired synthetic data pipeline simulating complex viscoelastic tool-tissue interactions and simulated fluoroscopy ray-tracing, generating an expansive temporal dataset of 370,000+ paired 3D/2D training samples.}
+        \resumeItem{Engineered a geometrically-regularized loss function embedding discrete differential geometry to enforce structural limits, achieving a sub-millimeter 3D target registration error (0.5mm) at an inference speed of 139 fps.}
+        \resumeItem{Built a physics-inspired spatio-temporal synthetic data pipeline simulating temporal viscoelastic tool-tissue interactions and simulated fluoroscopy ray-tracing, generating an expansive temporal dataset of 370,000+ paired 3D/2D training samples.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -146,18 +153,18 @@
         \resumeItem{Developed a spatial alignment pipeline to register MLO mammograms to CC view using breast-mask centroid matching and affine translation, for better dual-view feature correspondence by reducing cross-view centroid distance from 411 px to 0.39 px.}
         \resumeItem{Built a ResNet + cross-attention classifier that fused aligned CC/MLO mammograms for binary cancer risk stratification at 80\%}
     \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Unsupervised Neural Active Contours for Segmentation}}{ }
-          \resumeItemListStart
-            \resumeItem{Developed a segmentation approach predicting 2D contour boundaries by minimizing a physics-based active contour energy loss.}
-          \resumeItemListEnd
 \resumeProjectHeading
     {\textbf{Sparse 2D Echocardiograph to 3D Cardiac Volume Reconstruction}}{}
     \resumeItemListStart
-        \resumeItem{Developed a sparse-view 3D cardiac reconstruction pipeline using coordinate-based neural implicit representations to recover continuous left-ventricle occupancy fields from limited 2D echocardiography slices.}
+        \resumeItem{Developed a sparse-view 3D cardiac reconstruction pipeline using coordinate-based neural implicit representations to recover continuous volumetric cardiac ventricular occupancy fields from limited 2D echocardiography slices.}
         \resumeItem{Implemented differentiable multi-view projection with learnable pose optimization for joint slice alignment and geometry recovery, used Fourier positional encodings to capture fine anatomical detail and high-frequency boundaries under sparse supervision.}
         \resumeItem{Applied volumetric BCE point sampling to supervise unobserved 3D regions and geometric regularization (smoothness / surface priors) to enforce anatomically plausible reconstructions, achieving 0.8638 Dice / 0.7649 IoU on MITEA-CAP dataset.}
     \resumeItemListEnd
+     \resumeProjectHeading
+      {\textbf{Unsupervised Neural Active Contours for Segmentation}}{ }
+      \resumeItemListStart
+        \resumeItem{Developing an unsupervised pipeline for medical image segmentation using a CNN-driven Neural Active Contour framework to predict boundaries via a physics-inspired energy minimization and integrating Chan-Vese region priors}
+      \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 %-----------LEADERSHIP-----------
