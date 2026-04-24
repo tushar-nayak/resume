@@ -1,0 +1,26 @@
+name: Build and Push Resume PDF
+
+on:
+  push:
+    branches:
+      - main  # Change this to 'master' if your default branch is named master
+
+jobs:
+  build_and_push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex # IMPORTANT: Change 'resume.tex' to the actual name of your .tex file
+
+      - name: Commit and push PDF
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add *.pdf
+          git commit -m "Auto-compiled PDF from GitHub Actions" || echo "No changes to commit"
+          git push
