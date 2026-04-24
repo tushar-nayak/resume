@@ -15,12 +15,18 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: main.tex # IMPORTANT: Change 'resume.tex' to the actual name of your .tex file
+          root_file: main.tex 
 
-      - name: Commit and push PDF
+      - name: Rename, Commit and push PDF
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add *.pdf
+          
+          # Rename the compiled main.pdf to your desired filename
+          mv main.pdf tushar-nayak-resume.pdf
+          
+          # Add the specifically named PDF
+          git add tushar-nayak-resume.pdf
+          
           git commit -m "Auto-compiled PDF from GitHub Actions" || echo "No changes to commit"
           git push
