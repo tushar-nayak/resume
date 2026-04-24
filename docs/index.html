@@ -3,182 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f1ea" />
     <meta
       name="description"
-      content="Tushar Nayak - Machine Learning Engineer and Researcher focused on multimodal perception, 2D-3D registration, reconstruction, and physics-informed learning."
+      content="Tushar Nayak resume PDF viewer."
     />
-    <meta name="theme-color" content="#f6f3ee" />
-    <title>Tushar Nayak | Resume Portfolio</title>
+    <title>Tushar Nayak | Resume PDF</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="site">
-      <header class="header">
-        <a class="brand" href="#top">
-          <span class="brand-mark">TN</span>
-          <span>
-            <strong>Tushar Nayak</strong>
-            <small>Machine Learning Engineer / Researcher</small>
-          </span>
-        </a>
-        <nav class="nav">
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-        </nav>
-      </header>
+    <header class="bar">
+      <div>
+        <h1>Tushar Nayak</h1>
+        <p>Resume PDF viewer</p>
+      </div>
+      <a class="button" href="../tushar-nayak-resume.pdf" download>Download PDF</a>
+    </header>
 
-      <main id="top">
-        <section class="hero">
-          <div class="hero-copy">
-            <p class="eyebrow">Biomedical ML · 3D Vision · Reconstruction</p>
-            <h1>Building systems that recover structure from sparse visual observations.</h1>
-            <p class="lede">
-              I am a Machine Learning Engineer and Researcher focused on multimodal perception,
-              2D-3D registration and reconstruction, geometric deep learning, and
-              physics-informed learning.
-            </p>
-            <div class="actions">
-              <a class="button primary" href="../tushar-nayak-resume.pdf">Download PDF</a>
-              <a class="button" href="mailto:tusharn@andrew.cmu.edu">Email</a>
-              <a class="button" href="https://linkedin.com/in/nayaktushar" target="_blank" rel="noreferrer">LinkedIn</a>
-            </div>
-          </div>
-
-          <aside class="hero-side">
-            <img src="../preview.png" alt="Preview of the resume PDF" class="preview" />
-            <div class="contact-card">
-              <p><strong>Current</strong> M.S. Biomedical Engineering, CMU</p>
-              <p><strong>Focus</strong> FluoroGRID, tumor forecasting, sparse-view reconstruction</p>
-              <p><strong>Contact</strong> <a href="mailto:tusharn@andrew.cmu.edu">tusharn@andrew.cmu.edu</a></p>
-            </div>
-          </aside>
-        </section>
-
-        <section class="section">
-          <h2>Education</h2>
-          <div class="card">
-            <div class="row">
-              <strong>Carnegie Mellon University</strong>
-              <span>Pittsburgh, PA · May 2026</span>
-            </div>
-            <p>Master of Science - Biomedical Engineering (Research)</p>
-            <p class="muted">Courses: Computer Vision, Learning for 3D Vision, Computational Modeling and Analysis, Medical Image Analysis.</p>
-            <p class="muted">TA: Computer Vision, Applied Deep Learning, ML in Biomedical Research, Fundamentals of Computational BME.</p>
-            <p class="muted">Award: Carnegie Mellon University Biomedical Engineering Department Head's Fellowship.</p>
-          </div>
-          <div class="card">
-            <div class="row">
-              <strong>Manipal Institute of Technology</strong>
-              <span>Manipal, India · May 2023</span>
-            </div>
-            <p>Bachelor of Technology - Biomedical Engineering, Minor in Data Science</p>
-          </div>
-        </section>
-
-        <section class="section" id="experience">
-          <h2>Experience</h2>
-          <div class="grid">
-            <article class="card">
-              <div class="row">
-                <strong>Carnegie Mellon University</strong>
-                <span>Aug 2024 - May 2026</span>
-              </div>
-              <p>Graduate Student Researcher, Computational Engineering & Robotics Lab</p>
-              <ul>
-                <li>Built FluoroGRID, a multi-modal framework for estimating real-time 3D deformation from 2D fluoroscopy and 3D meshes.</li>
-                <li>Designed a geometrically regularized loss that reached 0.5mm target registration error at 139 fps.</li>
-                <li>Built a synthetic data pipeline with 370k+ paired 3D/2D training samples.</li>
-              </ul>
-            </article>
-
-            <article class="card">
-              <div class="row">
-                <strong>Carnegie Mellon University</strong>
-                <span>Feb 2025 - Aug 2025</span>
-              </div>
-              <p>Research Assistant, The forall Lab & Image Science Lab</p>
-              <ul>
-                <li>Developed a Neural ODE pipeline for longitudinal glioblastoma forecasting from multimodal MRI.</li>
-                <li>Built a hybrid Attention U-Net and temporal embedding model for continuous-time tumor evolution.</li>
-              </ul>
-            </article>
-
-            <article class="card">
-              <div class="row">
-                <strong>Manipal Institute of Technology</strong>
-                <span>Jan 2022 - May 2023</span>
-              </div>
-              <p>Undergraduate Student Researcher, Biomedical Informatics Computing Lab</p>
-              <ul>
-                <li>Built an ensemble neural network for oral cancer detection across lesion photos, OCT, and histology.</li>
-                <li>Achieved 95% CAM visualizable accuracy and won best paper at the Second International Conference on Artificial Intelligence, Computational Electronics & Communication.</li>
-              </ul>
-            </article>
-          </div>
-        </section>
-
-        <section class="section" id="projects">
-          <h2>Projects</h2>
-          <div class="grid">
-            <article class="card">
-              <p class="tag">Cardiac Reconstruction</p>
-              <strong>Sparse 2D Echocardiograph to 3D Cardiac Volume Reconstruction</strong>
-              <p class="muted">Recovered continuous ventricular occupancy fields from sparse 2D slices using coordinate-based neural implicit representations, differentiable multi-view projection, and geometric regularization.</p>
-              <p class="muted">Result: 3D Dice 0.864 and 3D IoU 0.765 on MITEA-CAP.</p>
-            </article>
-
-            <article class="card">
-              <p class="tag">Mammography</p>
-              <strong>Dual-View Mammography Breast Cancer Prediction</strong>
-              <p class="muted">Aligned MLO and CC views with centroid matching and affine translation, then fused them with a ResNet plus cross-attention classifier.</p>
-              <p class="muted">Result: 80% binary prediction on CBIS-DDSM.</p>
-            </article>
-
-            <article class="card">
-              <p class="tag">Denoising</p>
-              <strong>Neural Anisotropic Diffusion Network for MRI Denoising</strong>
-              <p class="muted">Unrolled the Perona-Malik denoising PDE into a differentiable model with learned spatially adaptive conduction weights.</p>
-              <p class="muted">Result: 24.85 dB PSNR on Br35H, with a 47% reduction in Edge MSE.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section" id="skills">
-          <h2>Skills</h2>
-          <div class="skills">
-            <div class="card">
-              <strong>Deep Learning</strong>
-              <p class="muted">Transformers, GNNs, Neural ODEs, PINNs, attention mechanisms, VLMs</p>
-            </div>
-            <div class="card">
-              <strong>3D Vision</strong>
-              <p class="muted">Reconstruction, neural rendering, deformable registration, implicit representations</p>
-            </div>
-            <div class="card">
-              <strong>Vision</strong>
-              <p class="muted">Detection, segmentation, multi-view geometry, camera geometry, optical flow</p>
-            </div>
-            <div class="card">
-              <strong>Frameworks</strong>
-              <p class="muted">PyTorch, PyTorch3D, PyG, TorchDiffEq, CUDA, OpenCV, Docker, Linux</p>
-            </div>
-            <div class="card">
-              <strong>Languages</strong>
-              <p class="muted">Python, C++, R, MATLAB, Julia</p>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <p>Tushar Nayak</p>
-        <div class="footer-links">
-          <a href="../tushar-nayak-resume.pdf">PDF</a>
-          <a href="../main.tex">LaTeX source</a>
-          <a href="mailto:tusharn@andrew.cmu.edu">Contact</a>
-        </div>
-      </footer>
-    </div>
+    <main class="viewer-wrap">
+      <object class="viewer" data="../tushar-nayak-resume.pdf" type="application/pdf">
+        <p>
+          Your browser cannot display PDFs inline.
+          <a href="../tushar-nayak-resume.pdf">Open the PDF</a>.
+        </p>
+      </object>
+    </main>
   </body>
 </html>
