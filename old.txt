@@ -68,7 +68,7 @@
 
 \vspace{-3pt}
 \noindent\small{
-Machine Learning Engineer and Researcher focused on 2D--3D registration and reconstruction, multimodal perception, geometric deep learning, and physics-informed learning. Building real-time systems that recover spatial structure from sparse visual observations.
+Machine Learning Engineer and Researcher focused on multimodal perception, geometric deep learning, and physics-informed learning. I am building real-time systems for recovering spatial structure from sparse visual observations in medical imaging for robotics.
 }
 \vspace{-2pt}
 %-----------EDUCATION-----------
@@ -89,7 +89,6 @@ Machine Learning Engineer and Researcher focused on 2D--3D registration and reco
       {Bachelor of Technology - Biomedical Engineering, Minor in Data Science}{May 2023}
       \vspace{2pt}
       \resumeItemListStart
-        %\resumeItem{}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -115,16 +114,16 @@ Machine Learning Engineer and Researcher focused on 2D--3D registration and reco
 \end{itemize}
 
 %-----------EXPERIENCE-----------
-\section{Experience}
+\section{Research}
   \resumeSubHeadingListStart
 
 \resumeSubheading
       {Carnegie Mellon University}{Pittsburgh, PA}
       {Graduate Student Researcher, Computational Engineering \& Robotics Lab}{Aug 2024 -- May 2026}
       \resumeItemListStart
-        \resumeItem{Architected \textsc{FluoroGRID}, a multi-modal quad-encoder framework fusing a live intra-operative fluoroscopy feed and pre-operative mesh to estimate deformation from 2D and registering it to 3D during endovascular surgery.}
-        \resumeItem{Engineered a geometrically-regularized loss function embedding discrete differential geometry to enforce structural limits, achieving a sub-millimeter 3D target registration error (0.5mm) at an inference speed of 139 fps.}
-        \resumeItem{Built a physics-grounded spatio-temporal synthetic data pipeline simulating temporal viscoelastic tool-tissue interaction meshes and simulated fluoroscopy ray-tracing, generating an expansive temporal dataset of 370,000+ paired 3D/2D training samples.}
+        \resumeItem{Architected \textsc{FluoroGRID}, a  framework to estimate 3D deformation from live 2D fluoroscopy feed during endovascular surgery.}
+        \resumeItem{Engineered a geometrically-regularized loss function embedding differential geometry, achieving real-time sub-millimeter accuracy.}
+        \resumeItem{Built a pipeline for simulating 3D elastic tool-tissue interaction and simulated fluoroscopy ray-tracing for neurovascular surgery.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -144,7 +143,7 @@ Machine Learning Engineer and Researcher focused on 2D--3D registration and reco
       \resumeItemListStart
         \resumeItem{Designed an ensemble neural network combining three transfer-learning models with self-attention for Oral Cancer detection.}
         \resumeItem{Achieved CAM visualizable accuracies of 95\% for detecting cancer across lesion photos, OCT, and histological modalities.}
-        \resumeItem{Co-authored publications based on this pipeline, alongside related models for Lung Cancer, Monkeypox \& Dengue detection.}
+        %\resumeItem{Co-authored publications based on this pipeline, alongside related models for Lung Cancer, Monkeypox \& Dengue detection.}
         \resumeItem{Won best paper at the Second International Conference on Artificial Intelligence, Computational Electronics \& Communication}
       \resumeItemListEnd
       
@@ -158,14 +157,15 @@ Machine Learning Engineer and Researcher focused on 2D--3D registration and reco
 \resumeProjectHeading
     {\textbf{Sparse 2D Echocardiograph to 3D Cardiac Volume Reconstruction}}{}
     \resumeItemListStart
-        \resumeItem{Developed a sparse-view 3D cardiac reconstruction pipeline using coordinate-based neural implicit representations to recover continuous 3D ventricular occupancy fields from sparse (2--3) 2D echocardiography slices.}
-        \resumeItem{Implemented differentiable multi-view projection with learnable pose optimization for joint slice alignment and geometry recovery, used Fourier positional encodings to capture fine anatomical detail and high-frequency boundaries under sparse supervision.}
-        \resumeItem{Applied volumetric BCE point sampling to supervise unobserved 3D regions and geometric regularization (smoothness / surface priors) to enforce anatomically plausible reconstructions, achieving 3D Dice 0.864 and 3D IoU 0.765 on MITEA-CAP dataset.}
+        \resumeItem{Developed a 3D reconstruction pipeline using coordinate-based neural implicit representations from sparse 2D echocardio slices.}
+        \resumeItem{Implemented differentiable multi-view projection with learnable pose optimization for joint slice alignment and geometry recovery.}
+        \resumeItem{Used Fourier positional encodings to capture fine anatomical detail and high-frequency boundaries under sparse supervision.}
+        \resumeItem{Applied volumetric BCE point sampling for unobserved 3D regions, achieving 3D Dice 0.864 and 3D IoU 0.765 on MITEA-CAP.}
     \resumeItemListEnd
         \resumeProjectHeading
     {\textbf{Dual-View Mammography Breast Cancer Prediction}}{}
     \resumeItemListStart
-        \resumeItem{Developed a spatial alignment pipeline to register MLO mammograms to CC view using breast-mask centroid matching and affine translation, for better dual-view feature correspondence by reducing cross-view centroid distance from 411 px to 0.39 px.}
+        \resumeItem{Developed an alignment pipeline to register MLO to CC with lesion centroid matching \& affine translation, reducing cross-view distance by 99.91\%}
         \resumeItem{Built a ResNet + cross-attention classifier that fused aligned mammograms for binary prediction at 80\% on CBIS-DDSM dataset.}
     \resumeItemListEnd
     \resumeProjectHeading
