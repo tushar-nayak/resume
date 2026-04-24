@@ -15,7 +15,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: resume.tex # IMPORTANT: Change 'resume.tex' to the actual name of your .tex file
+          root_file: main.tex # IMPORTANT: Change 'resume.tex' to the actual name of your .tex file
 
       - name: Commit and push PDF
         run: |
