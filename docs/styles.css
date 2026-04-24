@@ -5,6 +5,7 @@
   --muted: #5f6b7a;
   --line: #ddd5ca;
   --accent: #1b5cff;
+  --accent-soft: rgba(27, 92, 255, 0.08);
 }
 
 * {
@@ -53,8 +54,8 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 40px;
-  padding: 0 14px;
+  min-height: 44px;
+  padding: 0 16px;
   border-radius: 999px;
   border: 1px solid var(--line);
   background: var(--panel);
@@ -64,21 +65,22 @@ a {
 }
 
 .viewer-wrap {
-  padding: 18px;
+  padding: 18px 18px 6px;
 }
 
-.viewer {
+.preview-card {
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--panel);
+  box-shadow: 0 12px 40px rgba(16, 32, 51, 0.08);
+}
+
+.preview-image {
   display: block;
   width: 100%;
-  height: calc(100vh - 88px);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  background: var(--panel);
-}
-
-.viewer p {
-  margin: 0;
-  padding: 20px;
+  height: auto;
 }
 
 .repo-strip {
@@ -86,38 +88,90 @@ a {
 }
 
 .repo-strip h2 {
-  margin: 0 0 10px;
+  margin: 12px 0 12px;
   font-size: 0.98rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--muted);
 }
 
 .repo-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
 }
 
 .repo-links a,
 .repo-links span {
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
   align-items: center;
-  min-height: 36px;
-  padding: 0 12px;
-  border-radius: 999px;
+  gap: 12px;
+  min-height: 72px;
+  padding: 14px 16px;
+  border-radius: 18px;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   color: var(--text);
   font-size: 0.92rem;
+  text-decoration: none;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease;
 }
 
 .repo-links a:hover {
   border-color: var(--accent);
   color: var(--accent);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(27, 92, 255, 0.1);
 }
 
 .repo-note {
   color: var(--muted);
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  grid-column: 1 / -1;
+}
+
+.repo-icon {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.repo-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.repo-icon svg path:last-child {
+  stroke: currentColor;
+}
+
+.repo-text {
+  display: grid;
+  gap: 3px;
+}
+
+.repo-text strong {
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+
+.repo-text small {
+  color: var(--muted);
+  font-size: 0.8rem;
 }
 
 @media (max-width: 720px) {
@@ -126,9 +180,13 @@ a {
     align-items: flex-start;
   }
 
-  .viewer {
-    height: calc(100vh - 154px);
-    border-radius: 12px;
+  .repo-links {
+    grid-template-columns: 1fr;
+  }
+
+  .repo-links a,
+  .repo-links span {
+    min-height: 64px;
   }
 
   .repo-strip {

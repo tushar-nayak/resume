@@ -6,37 +6,89 @@
     <meta name="theme-color" content="#f5f1ea" />
     <meta
       name="description"
-      content="Tushar Nayak resume PDF viewer."
+      content="Tushar Nayak resume preview and project repository links."
     />
-    <title>Tushar Nayak | Resume PDF</title>
+    <title>Tushar Nayak | Resume Preview</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="bar">
       <div>
         <h1>Tushar Nayak</h1>
-        <p>Resume PDF viewer</p>
+        <p>Resume preview and project links</p>
       </div>
       <a class="button" href="../tushar-nayak-resume.pdf" download>Download PDF</a>
     </header>
 
     <main class="viewer-wrap">
-      <object class="viewer" data="../tushar-nayak-resume.pdf" type="application/pdf">
-        <p>
-          Your browser cannot display PDFs inline.
-          <a href="../tushar-nayak-resume.pdf">Open the PDF</a>.
-        </p>
-      </object>
+      <section class="preview-card">
+        <img src="../preview.png" alt="Preview of Tushar Nayak's resume" class="preview-image" />
+      </section>
     </main>
 
     <section class="repo-strip" aria-label="Project repositories">
       <h2>Project repositories</h2>
       <div class="repo-links">
-        <a href="https://github.com/tushar-nayak/cardiac-volume-reconstruction" target="_blank" rel="noreferrer">Sparse 2D Echocardiograph to 3D Cardiac Volume Reconstruction</a>
-        <a href="https://github.com/tushar-nayak/neural-anisotropic-diffusion" target="_blank" rel="noreferrer">Neural Anisotropic Diffusion Network for MRI Denoising</a>
-        <a href="https://github.com/tushar-nayak/grading-cbisddsm" target="_blank" rel="noreferrer">Dual-View Mammography Breast Cancer Prediction</a>
-        <a href="https://github.com/tushar-nayak/fluoro-grid" target="_blank" rel="noreferrer">FluoroGRID</a>
-        <span class="repo-note">private repo, manuscript underway</span>
+        <a href="https://github.com/tushar-nayak/cardiac-volume-reconstruction" target="_blank" rel="noreferrer">
+          <span class="repo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" focusable="false">
+              <path d="M12 21s-6.7-4.4-9.2-8.3C.9 9.5 2.5 6 6 6c1.9 0 3.2 1 4 2 0.8-1 2.1-2 4-2 3.5 0 5.1 3.5 3.2 6.7C18.7 16.6 12 21 12 21z" />
+            </svg>
+          </span>
+          <span class="repo-text">
+            <strong>Sparse 2D Echocardiograph to 3D Cardiac Volume Reconstruction</strong>
+            <small>Cardiac reconstruction</small>
+          </span>
+        </a>
+        <a href="https://github.com/tushar-nayak/glioblastoma-evolution" target="_blank" rel="noreferrer">
+          <span class="repo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" focusable="false">
+              <path d="M8 4h8v3H8zM6 8h12v11H6z" />
+              <path d="M10 12h4M10 15h4" />
+            </svg>
+          </span>
+          <span class="repo-text">
+            <strong>Neural ODE Forecasting for Glioblastoma Evolution</strong>
+            <small>Brain MRI dynamics</small>
+          </span>
+        </a>
+        <a href="https://github.com/tushar-nayak/neural-anisotropic-diffusion" target="_blank" rel="noreferrer">
+          <span class="repo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" focusable="false">
+              <path d="M12 3c2.2 0 4 1.8 4 4 0 1.2-.5 2.2-1.3 2.9C17 11 18 12.7 18 14.6 18 17.6 15.8 20 12 20s-6-2.4-6-5.4C6 12.7 7 11 9.3 9.9 8.5 9.2 8 8.2 8 7c0-2.2 1.8-4 4-4z" />
+              <path d="M9 15c.8-1.6 2.2-2.5 3-2.5s2.2.9 3 2.5" />
+            </svg>
+          </span>
+          <span class="repo-text">
+            <strong>Neural Anisotropic Diffusion Network for MRI Denoising</strong>
+            <small>Denoising and restoration</small>
+          </span>
+        </a>
+        <a href="https://github.com/tushar-nayak/grading-cbisddsm" target="_blank" rel="noreferrer">
+          <span class="repo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" focusable="false">
+              <path d="M4 5h16v14H4z" />
+              <path d="M8 9h8M8 12h8M8 15h4" />
+            </svg>
+          </span>
+          <span class="repo-text">
+            <strong>Dual-View Mammography Breast Cancer Prediction</strong>
+            <small>Clinical notebook</small>
+          </span>
+        </a>
+        <a href="https://github.com/tushar-nayak/fluoro-grid" target="_blank" rel="noreferrer">
+          <span class="repo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" focusable="false">
+              <path d="M12 3l3 4 5 1-3 4 .8 5-4.8-2.4L8.2 17 9 12 6 8l5-1z" />
+              <path d="M4 20l5-5M15 9l5-5" />
+            </svg>
+          </span>
+          <span class="repo-text">
+            <strong>FluoroGRID</strong>
+            <small>Private repo, manuscript underway</small>
+          </span>
+        </a>
+        <p class="repo-note">The FluoroGRID repository is private for now, but the link is included for when access opens.</p>
       </div>
     </section>
   </body>
