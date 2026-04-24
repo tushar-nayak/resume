@@ -212,17 +212,12 @@ img {
 }
 
 .repo-icon svg {
-  width: 24px;
-  height: 24px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  display: none;
 }
 
-.repo-icon svg path:last-child {
-  stroke: currentColor;
+.repo-icon i {
+  font-size: 1.05rem;
+  line-height: 1;
 }
 
 .repo-copy {
