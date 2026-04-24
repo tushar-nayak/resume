@@ -63,13 +63,11 @@
     \href{https://tushar-nayak.github.io/}{\underline{tushar-nayak.github.io}}
 \end{center}
 
-
-\section{Objective}
-\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt]
-\small{\item{
-Computer Vision and Machine Learning engineer specializing in 2D/3D perception, multimodal representation learning, geometric deep learning, and physically grounded AI systems. Applied these methods to high-impact real-world problems in medical imaging, surgical robotics, and complex data-driven domains requiring robust spatial reasoning under limited or noisy observations.
-}}
-\end{itemize}
+\vspace{-4pt}
+\noindent\small{
+Machine Learning Engineer and Researcher specializing in Computer Vision, 3D Reconstruction, Geometric Deep Learning, and Physics-Informed DL. Building perception systems for surgical robotics, medical imaging, and multimodal spatial intelligence tasks.
+}
+\vspace{-2pt}
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
@@ -93,12 +91,14 @@ Computer Vision and Machine Learning engineer specializing in 2D/3D perception, 
   \resumeSubHeadingListEnd
 
 %-----------SKILLS-----------
-\section{Technical Skills}
+\section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt]
     \small{\item{
      \textbf{Deep Learning}{: Graph Neural Networks, Neural ODEs, Attention Mechanisms, Physics-Informed Neural Networks, VLMs.} \\
      \textbf{3D Vision}{: Differentiable Neural Rendering, Deformable Registration, Implicit/Explicit Neural Representation, 3D Reconstruction} \\
-     \textbf{Computer Vision}{: Object Detection, Segmentation, Structure From Motion, Optical Flow, Photometric Stereovision}}}
+     \textbf{Computer Vision}{: Object Detection, Segmentation, Structure From Motion, Optical Flow, Photometric Stereovision}} \\
+     \textbf{Frameworks \& Tools}{: PyTorch, PyTorch3D, TensorFlow, OpenCV, Scikit, CUDA, Docker, Git, Linux} \\
+     \textbf{Languages}{: Python, MATLAB, C, C++, R, Julia}}
  \end{itemize}
 
 %-----------EXPERIENCE-----------
@@ -139,14 +139,7 @@ Computer Vision and Machine Learning engineer specializing in 2D/3D perception, 
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Neural Anisotropic Diffusion for Brain MRI Denoising}}{ }
-          \resumeItemListStart
-            \resumeItem{Developed a learned anisotropic diffusion framework by unrolling the Perona-Malik PDE into an end-to-end differentiable neural network, replacing fixed mathematical conduction functions with spatially-adaptive, learned weights.}
-            \resumeItem{Achieved 24.85 dB PSNR on the Br35H dataset, a +4.46 dB improvement over the best classical baseline (Non-Local Means), while reducing Edge MSE by 47\% compared to traditional Perona-Malik}
-            \resumeItem{Designed a hybrid architecture featuring a MiniUNet guidance encoder, an 8-neighbor iterative update loop, and a residual refinement stage to suppress Rician noise while preserving critical anatomical margins.}
 
-          \resumeItemListEnd
     \resumeProjectHeading
     {\textbf{Dual-View Mammography Breast Cancer Prediction}}{}
     \resumeItemListStart
@@ -160,23 +153,21 @@ Computer Vision and Machine Learning engineer specializing in 2D/3D perception, 
         \resumeItem{Implemented differentiable multi-view projection with learnable pose optimization for joint slice alignment and geometry recovery, used Fourier positional encodings to capture fine anatomical detail and high-frequency boundaries under sparse supervision.}
         \resumeItem{Applied volumetric BCE point sampling to supervise unobserved 3D regions and geometric regularization (smoothness / surface priors) to enforce anatomically plausible reconstructions, achieving 0.8638 Dice / 0.7649 IoU on MITEA-CAP dataset.}
     \resumeItemListEnd
-     \resumeProjectHeading
-      {\textbf{Unsupervised Neural Active Contours for Segmentation}}{ }
-      \resumeItemListStart
-        \resumeItem{Developing an unsupervised pipeline for medical image segmentation using a CNN-driven Neural Active Contour framework to predict boundaries via a physics-inspired energy minimization and integrating Chan-Vese region priors}
-      \resumeItemListEnd
-    \resumeSubHeadingListEnd
+        \resumeProjectHeading
+        {\textbf{Neural Anisotropic Diffusion for Brain MRI Denoising}}{ }
+          \resumeItemListStart
+    \resumeItem{Developed a learned anisotropic diffusion framework by unrolling the Perona-Malik PDE into an end-to-end differentiable neural network, replacing fixed mathematical conduction functions with spatially-adaptive, learned weights.}
+    \resumeItem{Achieved 24.85 dB PSNR on the Br35H dataset, a +4.46 dB improvement over the best classical baseline (Non-Local Means), while reducing Edge MSE by 47\% compared to traditional Perona-Malik}
+    \resumeItem{Designed a hybrid architecture featuring a MiniUNet guidance encoder, an 8-neighbor iterative update loop, and a residual refinement stage to suppress Rician noise while preserving critical anatomical margins.}
 
-%-----------LEADERSHIP-----------
-% %\section{Leadership}
-%  \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt]
-%     \small{\item{
-%     \textbf{Open Horizon Robotics}{: Senior Leadership Team \& Course Designer} \hfill Apr 2025 -- Present \\
-%      \textbf{Carnegie Mellon University}{: Graduate Ambassador for Biomedical Engineering} \hfill Apr 2025 -- May 2026 \\
-%      \textbf{IEEE Engineering in Medicine \& Biology Society, Manipal}{: Chairperson, Head of Research} \hfill Jul 2021 -- May 2023 \\
-%      %\vspace{1pt}
-%      \textbf{IEEE Robotics \& Automation Society, Manipal}{: Exec Board Member, Webmaster} \hfill Feb 2022 -- Jan 2023
-%     }}
-%  \end{itemize}
+          \resumeItemListEnd
+    % \resumeItemListEnd
+    %  \resumeProjectHeading
+    %   {\textbf{Unsupervised Neural Active Contours for Segmentation}}{ }
+    %   \resumeItemListStart
+    %     \resumeItem{Developing an unsupervised pipeline for medical image segmentation using a CNN-driven Neural Active Contour framework to predict boundaries via a physics-inspired energy minimization and integrating Chan-Vese region priors}
+    %   \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+
 
 \end{document}
