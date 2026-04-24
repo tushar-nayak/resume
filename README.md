@@ -7,7 +7,7 @@ landing page.
 
 ## Site
 
-- [Resume site](./githubpages/index.html)
+- [Resume site](./docs/index.html)
 - [PDF resume](./tushar-nayak-resume.pdf)
 - [LaTeX source](./main.tex)
 
