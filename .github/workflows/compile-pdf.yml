@@ -22,8 +22,8 @@ jobs:
 
       - name: Rename, Create Preview, Sync Docs, Update Timestamp, Commit and Push
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.email "technologyfoundhere2@gmail.com"
+          git config --local user.name "tushar-nayak"
           
           # 1. Rename the compiled main.pdf
           mv main.pdf tushar-nayak-resume.pdf
