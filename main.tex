@@ -62,37 +62,37 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\LARGE Tushar Nayak} \\ \vspace{5pt}
-    \small Pittsburgh, PA $|$ (412) 478-5677 $|$ \href{mailto:tusharn@andrew.cmu.edu}{\underline{tusharn@andrew.cmu.edu}} $|$ 
+    \small (412) 478-5677 $|$ \href{mailto:tusharn@andrew.cmu.edu}{\underline{tusharn@andrew.cmu.edu}} $|$ 
     \href{https://linkedin.com/in/nayaktushar}{\underline{linkedin.com/in/nayaktushar}} $|$
-    \href{https://tushar-nayak.github.io/}{\underline{tushar-nayak.github.io}}
+    \href{https://tushar-nayak.github.io/}{\underline{tushar-nayak.github.io}}  $|$ \textsc{Pittsburgh, PA}
 \end{center}
 
-\vspace{-1pt}
+\vspace{-6pt}
 \noindent\small{
-Machine Learning Engineer and Researcher focused on multimodal perception, 2D--3D registration and reconstruction, geometric deep learning, and physics-informed learning. Building real-time systems that recover spatial structure from sparse visual observations.
+Deep Learning Researcher/Engineer focused on multimodal perception, 2D--3D registration and reconstruction, geometric deep learning, and physics-informed learning. Building real-time systems that recover spatial structure from sparse visual observations.
 }
-\vspace{2pt}
+\vspace{0pt}
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Carnegie Mellon University}{Pittsburgh, PA}
-      {Master of Science - Biomedical Engineering (Research) | [3.8/4.0] }{May 2026}
-      \vspace{2.5pt}
+      {Master of Science - Biomedical Engineering (Research) -- [3.79/4.0] }{May 2026}
+      \vspace{1pt}
       \resumeItemListStartEdu % <--- CHANGED HERE
-        \resumeItem{\textbf{Courses:} Computer Vision, Learning for 3D Vision, Computational Modeling \& Analysis, Medical Image Analysis.}
-        \resumeItem{\textbf{TA:} Computer Vision, Applied Deep Learning, ML in Biomedical Research, Fundamentals of Computational Bioengineering}
-        \resumeItem{\textbf{Awards:} Carnegie Mellon University Biomedical Engineering Department Head's Fellowship}
+        \resumeItem{\textsc{courses:} Computer Vision, Learning for 3D Vision, Computational Modeling \& Analysis, Medical Image Analysis.}
+        \resumeItem{\textsc{ta:} Computer Vision, Applied Deep Learning, ML in Biomedical Research, Fundamentals of Computational Bioengineering}
+        \resumeItem{\textsc{awards:} Carnegie Mellon University Biomedical Engineering Department Head's Fellowship}
       \resumeItemListEnd
       
     \resumeSubheading
       {Manipal Institute of Technology}{Manipal, India}
       {Bachelor of Technology - Biomedical Engineering, Minor in Data Science}{May 2023}
-      \vspace{2pt}
-      %\resumeItemListStartEdu % <--- CHANGED HERE (commented out)
-      %  \resumeItem{\textbf{Awards:} Best Paper - Second Intl. Conference on Artificial Intelligence, Computational Electronics \& Communication}
-      %\resumeItemListEnd
+      \vspace{0.5pt}
+      \resumeItemListStartEdu % <--- CHANGED HERE (commented out)
+        \resumeItem{\textsc{awards:} Best Paper - 2nd International Conference on Artificial Intelligence, Computational Electronics \& Communication}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------SKILLS-----------
@@ -102,42 +102,42 @@ Machine Learning Engineer and Researcher focused on multimodal perception, 2D--3
 \textbf{Deep Learning:} GNNs, Neural ODEs, PINNs, Attention Mechanisms \& Transformers, U-Nets, VLMs \\
 \textbf{3D Vision:} Reconstruction, Neural Rendering, Deformable Registration, Implicit Representations, Differential Rendering \\
 \textbf{Vision:} Detection, Segmentation, Multi-view Geometry, Camera Geometry, Optical Flow, Structure from Motion \\
-\textbf{Frameworks:} PyTorch, PyTorch3D, PyGeometric, TorchDiffEq, TensorFlow, CUDA, OpenCV, Git, Docker, Linux \\
-\textbf{Languages:} Python, C++, R, MATLAB, Julia
+\textbf{Frameworks:} PyTorch, PyTorch3D, PyGeometric, TorchDiffEq, TensorFlow, Keras, CUDA, OpenCV, Git, Docker, Linux \\
+\textbf{Languages:} Python, MATLAB, C++, R, Julia, \LaTeX
 }
 \end{itemize}
 
 %-----------EXPERIENCE-----------
-\section{Experience}
+\section{Research}
   \resumeSubHeadingListStart
 
 \resumeSubheading
       {Carnegie Mellon University}{Pittsburgh, PA}
       {Graduate Student Researcher, Computational Engineering \& Robotics Lab}{Aug 2024 -- May 2026}
       \resumeItemListStart
-        \resumeItem{Architected \textsc{FluoroGRID}, a multi-modal quad-encoder framework fusing live 2D fluoroscopy feeds with 3D pre-operative meshes to estimate and map real-time 3D deformation, significantly reducing the need for continuous operative radiation.}
-        \resumeItem{Engineered a geometrically-regularized loss function embedding discrete differential geometry to enforce structural limits, achieving a sub-millimeter 3D target registration error (0.5mm) at an inference speed of 139 fps.}
-        \resumeItem{Built a physics-grounded spatio-temporal synthetic data pipeline simulating temporal viscoelastic tool-tissue interaction meshes and simulated fluoroscopy ray-tracing, generating an expansive temporal dataset of 370,000+ paired 3D/2D training samples.}
+        \resumeItem{Architected \textsc{FluoroGRID}, a multi-modal \textbf{quad-encoder framework fusing live 2D fluoroscopy feeds with 3D pre-operative volumes} to estimate and map real-time 3D deformation, reducing the need for continuous operative radiation.}
+        \resumeItem{Engineered a geometrically-regularized loss function embedding discrete differential geometry to enforce structural limits, achieving a \textbf{sub-millimeter precision at a real-time inference speed of \textgreater 120fps on \textsc{CUDA}, \textgreater 30fps on \textbf{\textsc{CPU}}}.}
+        \resumeItem{Built a physics-grounded spatio-temporal synthetic data pipeline \textbf{simulating temporal viscoelastic tool-tissue interaction} meshes and simulated fluoroscopy ray-tracing, generating an expansive dataset of \textbf{370,000+ data pairs 3D--2D}.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Carnegie Mellon University}{Pittsburgh, PA}
-      {Research Assistant, The $\forall$ Lab \& Image Science Lab }{Feb 2025 -- Aug 2025}
+      {Research Assistant, The $\forall$ Lab \& Image Science Lab}{Feb 2025 -- Aug 2025}
   \resumeItemListStart
-    \resumeItem{Developed a Neural ODE-based forecasting pipeline to predict longitudinal glioblastoma growth using
-  multimodal MRI sequences.}
-    \resumeItem{Architected a hybrid Attention U-Net and temporal embedding model to evolve latent tumor states in continuous time.}
+    \resumeItem{Developed a \textbf{Neural ODE-based forecasting} pipeline to predict longitudinal glioblastoma growth using
+  multimodal MRI.}
+    \resumeItem{Architected a hybrid \textbf{Attention U-Net \& temporal embedding} model to evolve latent tumor states \textbf{in continuous time}.}
     \resumeItem{Presented findings at CMU BME Forum 2025, currently investigating tumor evolution as a more explicit dynamics problem.}
   \resumeItemListEnd
 
     \resumeSubheading
       {Manipal Institute of Technology}{Manipal, India}
-      {Undergraduate Student Researcher, Biomedical Informatics \& Computing Lab}{Jan 2022 -- May 2023}
+      {Undergraduate Student Researcher, Biomedical Informatics Computing Lab}{Jan 2022 -- May 2023}
       \resumeItemListStart
-        \resumeItem{Designed an ensemble neural network combining three transfer-learning models with self-attention for Oral Cancer detection.}
-        \resumeItem{Achieved CAM visualizable accuracies of 95\% for detecting cancer across lesion photos, OCT, and histological modalities.}
-        %\resumeItem{Co-authored publications based on this pipeline, alongside related models for Lung Cancer, Monkeypox \& Dengue detection.}
-        \resumeItem{Won best paper at the Second International Conference on Artificial Intelligence, Computational Electronics \& Communication}
+        \resumeItem{Designed an \textbf{ensemble neural network} combining three transfer-learning models \textbf{with self-attention} for oral cancer detection.}
+        \resumeItem{Achieved \textbf{CAM visualizable accuracies of 95\%} for detecting cancer across lesion photos, OCT, and histological modalities.}
+        \resumeItem{Presented \& published findings based on the pipeline and related works for Lung Cancer, Monkeypox \& Dengue detection.}
+        %\resumeItem{Won best paper at the Second International Conference on Artificial Intelligence, Computational Electronics \& Communication}
       \resumeItemListEnd
       
   \resumeSubHeadingListEnd
@@ -147,23 +147,29 @@ Machine Learning Engineer and Researcher focused on multimodal perception, 2D--3
   \resumeSubHeadingListStart
 
 \resumeProjectHeading
-    {Sparse 2D Echocardiograph to 3D Cardiac Volume Reconstruction \textnormal{(Carnegie Mellon University)}}{}
+    {\textit{Sparse 2D Echocardiograph to 3D Cardiac Volume Reconstruction via Implicit Representations}}{\textbf{CMU}}
     \resumeItemListStart
-        \resumeItem{Developed a sparse-view 3D cardiac reconstruction pipeline using coordinate-based neural implicit representations to recover continuous 3D ventricular occupancy fields from sparse (2--3) 2D echocardiography slices.}
-        \resumeItem{Implemented differentiable multi-view projection with learnable pose optimization for joint slice alignment and geometry recovery, used Fourier positional encodings to capture fine anatomical detail and high-frequency boundaries under sparse supervision.}
-        \resumeItem{Applied volumetric BCE point sampling to supervise unobserved 3D regions and geometric regularization (surface priors) to enforce anatomically plausible reconstructions, achieving 3D Dice 0.864 and 3D IoU 0.765 on MITEA-CAP dataset.}
+        \resumeItem{Developed a cardiac reconstruction model using \textbf{coordinate-based neural implicit representations} from 3 sparse 2D echocardiography slices \textbf{achieving 3D Dice 0.864 and 3D IoU 0.765} on MITEA-CAP dataset with surface priors.}
+        \resumeItem{Implemented \textbf{differentiable multi-view projection with learnable pose optimization} for joint slice alignment \& geometry recovery, used \textbf{Fourier positional encodings to capture high-frequency boundaries} under sparse supervision.}
+        \resumeItem{Exploring a \textbf{stabilized Gaussian occupancy field} pipeline, clubbing differentiable rasterization and pose optimization.}
+        %\resumeItem{Applied volumetric BCE point sampling to supervise unobserved 3D regions and geometric regularization (surface priors) to enforce anatomically plausible reconstructions, .}
+    \resumeItemListEnd
+    
+    \resumeProjectHeading{\textit{Deformable 3D Gaussian Splatting for Endoscopic Surgical Scenes with VLM-Guidance}}{\textbf{CMU}}
+    \resumeItemListStart
+    \resumeItem{Placeholder}
     \resumeItemListEnd
         \resumeProjectHeading
-    {Dual-View Mammography Breast Cancer Prediction \textnormal{(Carnegie Mellon University)}}{}
+    {\textit{Dual-View Mammography Breast Cancer Prediction via Spatial Alignment \& Cross-Attention}}{\textbf{CMU}}
     \resumeItemListStart
-        \resumeItem{Developed a spatial alignment pipeline to register MLO mammograms to CC view using breast-mask centroid matching and affine translation, for better dual-view feature correspondence by reducing cross-view centroid distance by 99.91\%.}
+        \resumeItem{Developed a \textbf{spatial alignment pipeline} to register MLO mammograms to CC view using breast-mask \textbf{centroid matching and affine translation}, for better dual-view feature correspondence by \textbf{reducing cross-view centroid distance by 99.91\%}.}
         \resumeItem{Built a ResNet + cross-attention classifier that fused aligned mammograms for binary prediction at 80\% on CBIS-DDSM dataset.}
     \resumeItemListEnd
     \resumeProjectHeading
-    {Neural Anisotropic Diffusion Network for MRI Denoising \textnormal{(Carnegie Mellon University)}}{}
+    {\textit{Neural PDE-based Anisotropic Diffusion Differential Network for MRI Denoising}}{\textbf{CMU}}
     \resumeItemListStart
-        \resumeItem{Unrolled the Perona-Malik denoising PDE into a differentiable neural  network with learned spatially-adaptive conduction weights.}
-        \resumeItem{Achieved 24.85 dB PSNR on Br35H dataset (+ 4.46 dB vs. classical baselines) while reducing Edge MSE by 47\%.}
+        \resumeItem{Unrolled the Perona-Malik denoising PDE into a network with \textbf{learned spatially-adaptive conduction weights}.}
+        \resumeItem{Achieved \textbf{24.85 dB PSNR} on Br35H dataset (+ 4.46 dB vs. classical baselines) while \textbf{reducing Edge MSE by 47\%.}}
     \resumeItemListEnd
     \resumeSubHeadingListEnd
 
