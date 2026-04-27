@@ -68,11 +68,11 @@
     \href{https://tushar-nayak.github.io/}{\underline{tushar-nayak.github.io}}  $|$ \textsc{Pittsburgh PA}
 \end{center}
 
-\vspace{-3pt}
-\noindent\small{
-Deep Learning \& Computer Vision Researcher/Engineer focused on multimodal perception, 2D--3D registration and reconstruction, geometric deep learning, and physics-informed learning. Building real-time systems that recover structure from sparse visual observations.
-}
-\vspace{-7pt}
+\vspace{-2pt}
+\noindent\small
+Deep Learning \& Computer Vision Researcher/Engineer focused on multimodal perception, 2D--3D registration and reconstruction, geometric \& physics-informed deep learning. Building real-time medical systems that recover structure from sparse visual observations.
+
+\vspace{-2pt}
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -80,17 +80,17 @@ Deep Learning \& Computer Vision Researcher/Engineer focused on multimodal perce
     \resumeSubheading
       {Carnegie Mellon University}{Pittsburgh, PA}
       {Master of Science - Biomedical Engineering (Research) -- [3.79/4.0] }{May 2026}
-      \vspace{1pt}
+      \vspace{-2pt}
       \resumeItemListStartEdu % <--- CHANGED HERE
         \resumeItem{\textsc{courses:} Computer Vision, Learning for 3D Vision, Computational Modeling \& Analysis, Medical Image Analysis.}
-        \resumeItem{\textsc{ta:} Computer Vision, Applied Deep Learning, ML in Biomedical Research, Fundamentals of Computational Bioengineering}
-        \resumeItem{\textsc{awards \& leadership:} CMU-BME Department Head's Fellowship, CMU-BME Department Ambassador}
+        \resumeItem{\textsc{ta:} Computer Vision, Applied Deep Learning, ML in Biomedical Research, Fundamentals of Computational Bioengineering.}
+        \resumeItem{\textsc{awards and leadership:} CMU-BME Department Head's Fellowship, CMU-BME Department Ambassador.}
       \resumeItemListEnd
       
     \resumeSubheading
       {Manipal Institute of Technology}{Manipal, India}
       {Bachelor of Technology - Biomedical Engineering, Minor in Data Science}{May 2023}
-      \vspace{0.5pt}
+      \vspace{-1.5pt}
       \resumeItemListStartEdu % <--- CHANGED HERE (commented out)
         \resumeItem{\textsc{awards:} Best Paper - 2nd International Conference on Artificial Intelligence, Computational Electronics \& Communication}
       \resumeItemListEnd
@@ -98,13 +98,13 @@ Deep Learning \& Computer Vision Researcher/Engineer focused on multimodal perce
 
 %-----------SKILLS-----------
 \section{Skills}
-\begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt]
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=1pt]
 \small\item{
-\textbf{Deep Learning:} GNNs, Neural ODEs, PINNs, Attention Mechanisms \& Transformers, U-Nets, VLMs \\
-\textbf{3D Vision:} Reconstruction, Neural Rendering, Deformable Registration, Implicit Representations, Differential Rendering \\
-\textbf{Vision:} Detection, Segmentation, Multi-view Geometry, Camera Geometry, Optical Flow, Structure from Motion \\
-\textbf{Frameworks:} PyTorch, PyTorch3D, PyGeometric, TorchDiffEq, TensorFlow, Keras, CUDA, OpenCV, Git, Docker, Linux \\
-\textbf{Languages:} Python, \textsc{matlab}, C++, R, Julia, \LaTeX
+\textbf{Deep Learning:} GNNs, Neural ODEs, PINNs, Attention Mechanisms \& Transformers, U-Nets, VLMs, Occupancy Networks. \\
+\textbf{3D Vision:} Reconstruction, Neural Rendering, Deformable Registration, Implicit Representations, Differential Rendering. \\
+\textbf{Vision:} Detection, Segmentation, Multi-view Geometry, Camera Geometry, Optical Flow, Structure from Motion. \\
+\textbf{Frameworks:} PyTorch, PyTorch3D, PyGeometric, TorchDiffEq, TensorFlow, Keras, CUDA, OpenCV, Git, Docker, Linux. \\
+\textbf{Languages:} Python, \textsc{matlab}, C++, R, Julia, \LaTeX.
 }
 \end{itemize}
 
@@ -181,7 +181,7 @@ Deep Learning \& Computer Vision Researcher/Engineer focused on multimodal perce
   \resumeSubHeadingListStart
 
 \resumeProjectHeading
-    {\textit{Sparse 2D Echocardiograph to 3D Cardiac Volume Reconstruction} {\href{https://tushar-nayak.github.io/cardiac-volume-reconstruction/}{\small \texttt{\faLink}}} {\textnormal{(CMU)}} }{Aug 2025 - present}
+    {\textit{Sparse 2D Echocardiograph to 3D Cardiac Volume Reconstruction} {\href{https://tushar-nayak.github.io/cardiac-volume-reconstruction/}{\small{\faLink}}} {\textnormal{(CMU)}} }{Aug 2025 - present}
     \resumeItemListStart
         \resumeItem{Developed a cardiac reconstruction model using \textbf{coordinate-based neural implicit representations} with surface priors from 3 sparse 2D echocardiography slices \textbf{achieving 3D Dice 0.864 and 3D IoU 0.765} on the \textsc{mitea-cap} dataset.}
         \resumeItem{Implemented \textbf{differentiable multi-view projection with learnable pose optimization} for joint slice alignment \& geometry recovery, used \textbf{Fourier positional encodings to capture high-frequency boundaries} under sparse supervision.}
@@ -198,7 +198,7 @@ Deep Learning \& Computer Vision Researcher/Engineer focused on multimodal perce
     {\textit{Dual View Mammogram-based Breast Cancer Prediction} {\href{https://github.com/tushar-nayak/grading-cbisddsm/}{\small \faLink}} {\textnormal{(CMU)}}}{Jan 26 - May 26}
     \resumeItemListStart
         \resumeItem{Developed a \textbf{spatial alignment pipeline} to register MLO mammograms to CC view using breast-mask \textbf{centroid matching and affine translation}, for better dual-view feature correspondence by \textbf{reducing cross-view centroid distance by 99.91\%}.}
-        \resumeItem{Built a ResNet + \textsc{cv}-attention classifier that fused aligned mammograms for binary prediction at \textbf{80\%} on \textsc{cbis-ddsm} dataset.}
+        \resumeItem{Built a \textbf{cross-view attention classifier} that fused aligned mammograms for binary prediction at \textbf{80\%} on \textsc{cbis-ddsm} dataset.}
     \resumeItemListEnd
     \resumeProjectHeading
     {\textit{Neural PDE-based Anisotropic Diffusion for MRI Denoising} {\href{https://tushar-nayak.github.io/neural-anisotropic-diffusion/}{\small \faLink}} {\textnormal{(CMU)}}}{Feb 26 - Mar 26}
@@ -206,6 +206,13 @@ Deep Learning \& Computer Vision Researcher/Engineer focused on multimodal perce
         \resumeItem{Unrolled the Perona-Malik denoising PDE into a neural network with \textbf{learned spatially-adaptive conduction weights}.}
         \resumeItem{Achieved \textbf{24.85 dB PSNR} (+4.46 dB vs. baselines) while \textbf{reducing Edge MSE by 47\%} on \textsc{Br35H} dataset.}
     \resumeItemListEnd
+    
+    \resumeProjectHeading{\textit{Perception and Visual Learning {\href{https://github.com/openhorizonrobotics/perception}{\small \faLink}} {\textnormal{(Open Horizon Robotics Education Team)}}}}{Apr 26 - present}  
+    %\resumeItemListStart
+     %   \resumeItem{Unrolled the Perona-Malik denoising PDE into a neural network with \textbf{learned spatially-adaptive conduction weights}.}
+    %\resumeItemListEnd
+
+    
     \resumeSubHeadingListEnd
 
 \end{document}
