@@ -1,6 +1,6 @@
 \documentclass[letterpaper,10pt]{article}
 
-\usepackage[left=0.5in, right=0.5in, top=0.5in, bottom=0.25in]{geometry}
+\usepackage[left=0.35in, right=0.35in, top=0.35in, bottom=0.25in]{geometry}
 \usepackage[inline]{enumitem}
 \usepackage{hyperref}
 \usepackage{titlesec}
@@ -65,7 +65,7 @@
     \textsc{\textbf{\LARGE Tushar Nayak}} \\ \vspace{5pt}
     \small (412) 478-5677 $|$ \href{mailto:tusharn@andrew.cmu.edu}{\underline{tusharn@andrew.cmu.edu}} $|$ 
     \href{https://linkedin.com/in/nayaktushar}{\underline{linkedin.com/in/nayaktushar}} $|$
-    \href{https://tushar-nayak.github.io/}{\underline{tushar-nayak.github.io}}  $|$ \textsc{Pittsburgh PA}
+    \href{https://tushar-nayak.github.io/}{\underline{tushar-nayak.github.io}}  
 \end{center}
 
 \vspace{-2pt}
@@ -83,7 +83,7 @@ Deep Learning \& Computer Vision Researcher/Engineer focused on multimodal perce
       \vspace{-0.5pt}
       \resumeItemListStartEdu % <--- CHANGED HERE
         \resumeItem{\textsc{Courses:} Computer Vision, Learning for 3D Vision, Computational Modeling \& Analysis, Medical Image Analysis.}
-        \resumeItem{\textsc{Ta:} Computer Vision, Applied Deep Learning, ML in Biomedical Research, Fundamentals of Computational Bioengineering.}
+        \resumeItem{\textsc{TA:} Computer Vision, Applied Deep Learning, ML in Biomedical Research, Fundamentals of Computational Bioengineering.}
         \resumeItem{\textsc{Awards and Leadership:} CMU-BME Department Head's Fellowship, CMU-BME Department Ambassador.}
       \resumeItemListEnd
       
@@ -92,7 +92,8 @@ Deep Learning \& Computer Vision Researcher/Engineer focused on multimodal perce
       {Bachelor of Technology - Biomedical Engineering, Minor in Data Science}{May 2023}
       \vspace{-0.5pt}
       \resumeItemListStartEdu % <--- CHANGED HERE (commented out)
-        \resumeItem{\textsc{awards:} Best Paper - 2nd International Conference on Artificial Intelligence, Computational Electronics \& Communication}
+        \resumeItem{\textsc{Awards:} Best Paper* - 2nd International Conference on Artificial Intelligence, Computational Electronics \& Communication}
+        \resumeItem{\textsc{Leadership:} IEEE-EMBS Student Chapter Chair \& Research Head; IEEE-RAS Student Chapter Exec. Board \& Webmaster.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -153,7 +154,7 @@ Deep Learning \& Computer Vision Researcher/Engineer focused on multimodal perce
       {Graduate Researcher, Real-time 3D Vascular Deformation Estimation \href{https://tushar-nayak.github.io/assets/pdf/tusharn-poster.pdf}{\textbf{} \faChalkboardTeacher}}{Aug 2024 -- present}
       \resumeItemListStart
         \resumeItem{Architected {\textsc{FluoroGRID}}, a \textbf{multi-modal quad-encoder graph neural network} fusing live 2D fluoroscopy feeds with 3D pre-operative volumes to \textbf{map 3D deformations from 2D input in real time} to reduce continuous operative radiation.}
-        \resumeItem{Engineered a geometrically regularized loss function leveraging discrete differential geometry to enforce structural limits, achieving \textbf{sub-millimeter precision} and real-time inference speeds (\textbf{\textgreater 120fps on GPU, \textgreater 30fps on CPU}).}
+        \resumeItem{Engineered a geometrically regularized loss function leveraging discrete differential geometry to enforce structural limits, achieving \textbf{sub-millimeter precision} and real-time inference speeds (\textbf{\textgreater 120fps on CUDA, \textgreater 30fps on CPU}).}
         \resumeItem{Built a physics-grounded synthetic data pipeline \textbf{simulating viscoelastic tool-tissue interactions and fluoroscopy ray-tracing}, generating an expansive dataset of \textbf{370,000+ 3D--2D training data pairs}.}
       \resumeItemListEnd
 
@@ -161,7 +162,7 @@ Deep Learning \& Computer Vision Researcher/Engineer focused on multimodal perce
       {The $\forall$ Lab and Image Science Lab, Carnegie Mellon University}{Pittsburgh, PA}
       {Research Assistant, Longitudinal Glioblastoma Evolution Visual Forecasting {\href{https://tushar-nayak.github.io/glioblastoma-evolution/}{\small \texttt{\faLink}}}}{Feb 2025 -- Aug 2025}
       \resumeItemListStart
-        \resumeItem{Developed a \textsc{Neural ODE-based} forecasting pipeline to predict longitudinal glioblastoma growth using multimodal MRI.}
+        \resumeItem{Developed a \textbf{Neural ODE}-based forecasting pipeline to visually predict longitudinal glioblastoma growth using multimodal MRI.}
         \resumeItem{Built an \textbf{Attention U-Net \& temporal embedding model} to simulate the evolution of latent tumor in continuous time.}
         \resumeItem{Presented findings at the \textbf{CMU BME Forum 2025} \href{https://www.youtube.com/watch?v=Rw9KHNOaAL0}{\faYoutube}, currently modeling tumor evolution as an explicit dynamics problem.}
       \resumeItemListEnd
@@ -172,7 +173,7 @@ Deep Learning \& Computer Vision Researcher/Engineer focused on multimodal perce
       \resumeItemListStart
         \resumeItem{Designed an ensemble model combining \textbf{3 transfer-learning models with self-attention} mechanisms for oral cancer detection.}
         \resumeItem{Achieved \textbf{95\% accuracy} across lesion photos, OCT, and histological modalities, with class activation mapping for explainability.}
-        \resumeItem{Published \& presented research findings on this pipeline, alongside diagnostic models for Lung Cancer, Mpox, \& Dengue \href{https://scholar.google.com/citations?user=9xUX7NoAAAAJ&hl=en}{\faGraduationCap}.}
+        \resumeItem{Published \& presented research findings on this pipeline, alongside diagnostic models for Lung Cancer, Mpox, \& Dengue* \href{https://scholar.google.com/citations?user=9xUX7NoAAAAJ&hl=en}{\faGraduationCap}.}
       \resumeItemListEnd
       
   \resumeSubHeadingListEnd
@@ -184,7 +185,7 @@ Deep Learning \& Computer Vision Researcher/Engineer focused on multimodal perce
     {\textit{Sparse 2D Echocardiograph to 3D Cardiac Volume Reconstruction} {\href{https://tushar-nayak.github.io/cardiac-volume-reconstruction/}{\small{\faLink}}} {\textnormal{(CMU)}} }{Aug 2025 - present}
     \resumeItemListStart
         \resumeItem{Developed \textbf{coordinate-based neural implicit representation} model for cardiac volume reconstruction with surface priors from only three sparse 2D echocardiography slices \textbf{achieving 3D Dice 0.864 and 3D IoU 0.765} on the \textsc{mitea-cap} dataset.}
-        \resumeItem{Implemented \textbf{differentiable multi-view projection with learnable pose optimization} for joint slice alignment \& geometry recovery, used Fourier positional encodings to capture high-frequency boundaries under sparse supervision.}
+        \resumeItem{Implemented \textbf{differentiable multi-view projection with learnable pose optimization} for joint slice alignment \& geometry recovery, used Fourier positional encoding to capture high-frequency boundaries under sparse supervision.}
         \resumeItem{Exploring a \textbf{stabilized Gaussian occupancy field} pipeline, clubbing differentiable rasterization and pose optimization.}
         %\resumeItem{Applied volumetric BCE point sampling to supervise unobserved 3D regions and geometric regularization (surface priors) to enforce anatomically plausible reconstructions, .}
     \resumeItemListEnd
@@ -203,8 +204,9 @@ Deep Learning \& Computer Vision Researcher/Engineer focused on multimodal perce
     \resumeProjectHeading
     {\textit{Neural PDE-based Anisotropic Diffusion for MRI Denoising} {\href{https://tushar-nayak.github.io/neural-anisotropic-diffusion/}{\small \faLink}} {\textnormal{(CMU)}}}{Feb 2026- Mar 2026}
     \resumeItemListStart
-        \resumeItem{Unrolled the Perona-Malik denoising PDE into a neural network with \textbf{learned spatially-adaptive conduction weights}.}
-        \resumeItem{Achieved \textbf{24.85 dB PSNR} (+4.46 dB vs. baselines) while \textbf{reducing Edge MSE by 47\%} on \textsc{Br35H} dataset.}
+        %\resumeItem{Unrolled the Perona-Malik denoising PDE into a neural network with \textbf{learned spatially-adaptive conduction weights}.}
+        %\resumeItem{Achieved \textbf{24.85 dB PSNR} (+4.46 dB vs. baselines) while \textbf{reducing Edge MSE by 47\%} on \textsc{Br35h} dataset.}
+    \resumeItem{Unrolled Perona-Malik PDE with \textbf{learned conduction weights}, achieving \textbf{+23\% PSNR} and \textbf{47\% lower Edge MSE} on \textsc{Br35h}.}
     \resumeItemListEnd
     
     \resumeProjectHeading{\textit{Perception and Visual Learning {\href{https://github.com/openhorizonrobotics/perception}{\small \faLink}} {\textnormal{(Education Team, Open Horizon Robotics)}}}}{Mar 2026 - present} 
